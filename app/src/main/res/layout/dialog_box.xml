@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Sample Title"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="25sp"
+            />
+
+        <ImageView
+            android:id="@+id/dialog_image"
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sample"
+            android:layout_below="@id/dialog_title"
+
+
+            />
+
+        <Button
+            android:id="@+id/dialog_listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#46BC4B"
+            android:text="Listen!"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dialog_image"
+            android:layout_marginTop="5dp"
+             />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
